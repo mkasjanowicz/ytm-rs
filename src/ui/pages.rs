@@ -1994,9 +1994,14 @@ fn settings_app_icon(app: &mut App, ui: &mut Ui) {
 /// Settings › Connections.
 fn settings_connections(app: &mut App, ui: &mut Ui) {
     let mut discord_enabled = app.discord_enabled;
+    let mut remote_enabled = app.remote_enabled;
     settings_section(ui, "Connections", None, None, |ui| {
         setting_row(ui, "Discord", Some("Show what you're playing on your Discord profile."), |ui| {
             toggle(ui, &mut discord_enabled, "Discord");
+        });
+        divider(ui);
+        setting_row(ui, "Stream Deck", Some("Let a Stream Deck plugin on this computer control playback."), |ui| {
+            toggle(ui, &mut remote_enabled, "Stream Deck");
         });
         divider(ui);
         let busy = app.lastfm_busy.load(Ordering::Relaxed);
@@ -2025,6 +2030,7 @@ fn settings_connections(app: &mut App, ui: &mut Ui) {
     if discord_enabled != app.discord_enabled {
         app.set_discord_enabled(discord_enabled);
     }
+    app.remote_enabled = remote_enabled;
         divider(ui);
         let busy = app.listenbrainz_busy.load(Ordering::Relaxed);
         let desc = match &app.listenbrainz_user {

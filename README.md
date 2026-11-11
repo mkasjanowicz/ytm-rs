@@ -5,8 +5,8 @@
   <p>Built in Rust with egui and rodio. No Electron, no browser-based player, and around 130 MB of memory while playing.</p>
 
   <p>
-    <a href="https://github.com/grapedjuice/ytm-rs/releases/latest"><img src="https://img.shields.io/github/v/release/grapedjuice/ytm-rs?style=flat-square&color=ff4e45" alt="Latest release"></a>
-    <a href="https://github.com/grapedjuice/ytm-rs/releases"><img src="https://img.shields.io/github/downloads/grapedjuice/ytm-rs/total?style=flat-square&color=ff4e45" alt="Downloads"></a>
+    <a href="https://github.com/mkasjanowicz/ytm-rs/releases/latest"><img src="https://img.shields.io/github/v/release/mkasjanowicz/ytm-rs?style=flat-square&color=ff4e45" alt="Latest release"></a>
+    <a href="https://github.com/mkasjanowicz/ytm-rs/releases"><img src="https://img.shields.io/github/downloads/mkasjanowicz/ytm-rs/total?style=flat-square&color=ff4e45" alt="Downloads"></a>
     <img src="https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-333?style=flat-square" alt="Platforms">
     <a href="LICENSE"><img src="https://img.shields.io/github/license/grapedjuice/ytm-rs?style=flat-square&color=333" alt="License: GPL-3.0"></a>
     <a href="https://ko-fi.com/grapedjuice"><img src="https://img.shields.io/badge/Ko--fi-support-ff4e45?style=flat-square&logo=kofi&logoColor=white" alt="Support on Ko-fi"></a>
@@ -14,13 +14,20 @@
 
   <p>
     <a href="https://grapedjuice.github.io/ytm-rs/">Website</a> ·
-    <a href="https://github.com/grapedjuice/ytm-rs/releases/latest">Download</a> ·
+    <a href="https://github.com/mkasjanowicz/ytm-rs/releases/latest">Download</a> ·
     <a href="#features">Features</a> ·
     <a href="#installation">Installation</a> ·
     <a href="#building-from-source">Build from source</a> ·
     <a href="https://github.com/grapedjuice/ytm-rs/discussions">Discussions</a>
   </p>
 </div>
+
+<p align="center">
+  <strong>This fork adds Stream Deck control.</strong>
+  It is on from the start. Switch it off under Settings, Connections, Stream Deck.
+  The keys are in <a href="https://github.com/mkasjanowicz/ytm-rs-streamdeck">ytm-rs-streamdeck</a>.
+  Upstream is <a href="https://github.com/grapedjuice/ytm-rs">grapedjuice/ytm-rs</a>.
+</p>
 
 <p align="center">
   <img src="docs/readme/v2/hero.jpg" alt="ytm-rs playing Espresso by Sabrina Carpenter with synced lyrics in the Apple Music theme, in front of the Home page, with the mini player floating over both" width="100%">
